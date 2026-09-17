@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaboSana – Explore the Formula | OfferZone</title>
+    <meta name="description" content="Learn about MetaboSana, its multi-ingredient formulation and how it can fit into a balanced wellness routine.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MetaboSana – Explore the Formula | OfferZone">
+    <meta property="og:description" content="Learn about MetaboSana, its multi-ingredient formulation and how it can fit into a balanced wellness routine.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        /* CSS Reset & Variables */
+        :root {
+            /* Botanical & Natural Palette */
+            --primary: #2C5C4B; /* Trustworthy botanical green */
+            --primary-light: #4A806D;
+            --primary-dark: #1E4135;
+            --accent: #E0EDE9; /* Very soft green wash */
+            --bg-neutral: #F7F5F0; /* Soft, clean linen beige */
+            
+            /* Text & UI Colors */
+            --white: #ffffff;
+            --text-main: #2D3748; /* Premium dark charcoal */
+            --text-muted: #5A6A79;
+            --border-color: #E2E8F0;
+            --legal-bg: #21352F; /* Deepest green for contrast */
+            --legal-text: #A0AEC0;
+
+            /* Visual Specs */
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 50px;
+            --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            color: var(--text-main);
+            background-color: var(--white);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--text-main);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        h1 { font-size: 2.25rem; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; }
+        p { margin-bottom: 1rem; color: var(--text-muted); font-size: 1rem; }
+        
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .text-center { text-align: center; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .mt-1 { margin-top: 0.5rem; }
+        .mt-2 { margin-top: 1rem; }
+        .mt-3 { margin-top: 2rem; }
+        .mt-4 { margin-top: 3rem; }
+        .mb-4 { margin-bottom: 3rem; }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            background-color: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            border-radius: var(--radius-full);
+            border: 2px solid var(--primary);
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .btn { width: auto; min-width: 300px; }
+        }
+
+        .btn:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background-color: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--accent);
+            color: var(--primary-dark);
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--legal-bg);
+            color: var(--legal-text);
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-light { background-color: var(--white); }
+        .section-neutral { background-color: var(--bg-neutral); }
+        .section-accent { background-color: var(--accent); }
+
+        /* General Image Placeholders */
+        .image-placeholder {
+            background-color: #E2E8F0;
+            color: #718096;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            overflow: hidden;
+            border-radius: inherit;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .hero { grid-template-columns: 1.2fr 1fr; text-align: left; }
+        }
+
+        .hero-text { text-align: center; }
+        @media (min-width: 768px) { .hero-text { text-align: left; } }
+
+        .hero h1 { max-width: 600px; }
+        .hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; }
+
+        .hero-image-wrapper {
+            margin: 0 auto;
+            max-width: 500px;
+            width: 100%;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background-color: var(--white);
+            position: relative;
+            aspect-ratio: 1/1;
+        }
+
+        .hero-image-wrapper img {
+            width: 100%; height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .hero-disclaimer-small {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        /* Grid Layouts */
+        .grid-4, .grid-3, .grid-2 {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(3, 1fr); }
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (min-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        /* Cards - Modern Styled */
+        .card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-6px);
+            border-color: var(--accent);
+        }
+
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        /* Ingredient Visual Grid */
+        .ingredient-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .ingredient-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (min-width: 1024px) {
+            .ingredient-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+
+        .ingredient-card {
+            background: var(--white);
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ingredient-card:hover {
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .ingredient-visual {
+            width: 100%;
+            aspect-ratio: 1.2/1; /* Modern slight landscape */
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .ingredient-visual img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+
+        .ingredient-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+            margin-top: auto;
+        }
+        .ingredient-card p {
+            font-size: 0.85rem;
+            margin-bottom: 0;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        /* Modern Steps */
+        .step-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        @media (min-width: 600px) {
+            .step-wrapper { flex-direction: row; text-align: left; }
+        }
+
+        .step-graphic {
+            width: 120px;
+            height: 120px;
+            border-radius: var(--radius-lg);
+            background-color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--white);
+            flex-shrink: 0;
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        @media (min-width: 600px) {
+            .step-graphic { margin-right: 2rem; margin-bottom: 0; }
+        }
+
+        .step-graphic .step-number-overlay {
+            position: absolute;
+            background-color: var(--primary);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 700;
+            bottom: -15px;
+            right: -15px;
+            border: 4px solid var(--white);
+        }
+
+        .step-graphic img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+        
+        /* Checkmarks */
+        .check-list {
+            list-style: none;
+            margin-top: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+            color: var(--text-main);
+            padding-bottom: 1.25rem;
+            border-bottom: 1px solid #F1F5F9;
+        }
+        .check-list li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
+
+        .check-list svg {
+            color: var(--primary);
+            min-width: 26px;
+            margin-right: 1.25rem;
+            margin-top: 2px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            padding: 4px;
+        }
+
+        /* Product Details Card - Enhanced */
+        .product-card {
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 4rem 2.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-card-visual {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2.5rem;
+            border-radius: var(--radius-lg);
+            position: relative;
+        }
+        .product-card-visual img { width: 100%; height: 100%; object-fit: contain; }
+
+        .product-card hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 2rem 0;
+        }
+
+        .product-info-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+        .product-info-line strong { color: var(--text-muted); font-weight: 500;}
+
+        /* FAQ Accordion */
+        .faq-container {
+            max-width: 850px;
+            margin: 4rem auto 0;
+            background-color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #F1F5F9;
+        }
+        .faq-item:last-child { border-bottom: none; }
+        
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 1.5rem 0;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover { color: var(--primary); }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-light);
+            transition: transform 0.3s;
+            margin-left: 1rem;
+        }
+        
+        .faq-question.active { color: var(--primary); }
+        .faq-question.active::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .faq-answer p {
+            padding-bottom: 2rem;
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        /* Final CTA Section - Botanical Background Feel */
+        .final-cta {
+            background-color: var(--legal-bg);
+            color: var(--white);
+            text-align: center;
+        }
+        .final-cta h2, .final-cta p, .final-cta .mt-4 { color: var(--white); }
+        .final-cta p { opacity: 0.9; }
+
+        /* Disclosures & Footer */
+        .legal-section {
+            background-color: var(--legal-bg);
+            color: var(--legal-text);
+            padding: 5rem 0 3rem;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .legal-section h4 {
+            color: var(--white);
+            margin-bottom: 1.25rem;
+            font-weight: 600;
+        }
+
+        .footer-bottom {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .footer-bottom {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-links a {
+            color: var(--legal-text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        /* Sticky Mobile CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            padding: 1rem;
+            box-shadow: 0 -4px 6px -1px rgba(0,0,0,0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transform: translateY(100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+
+        @media (min-width: 768px) {
+            .sticky-cta {
+                display: none;
+            }
+        }
+        
+        /* Padding bottom for body to avoid sticky CTA hiding content */
+        @media (max-width: 767px) {
+            body {
+                padding-bottom: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Affiliate Links Script -->
+    <script>
+        // *** DO NOT CHANGE THIS LINE ***
+        const AFFILIATE_LINK = "https://metabosana.com/metabosana-pdp-fe#aff=OfferZone15";
+    </script>
+
+    <!-- 1. Top Trust Bar -->
+    <div class="top-bar">
+        Informational content • Dietary supplement • Individual results may vary
+    </div>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">OfferZone</a>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="section-light">
+        <div class="container hero">
+            <div class="hero-text">
+                <h1>Still Looking for Better Support for Your Metabolism? Discover the MetaboSana Daily Formula</h1>
+                <p>Discover MetaboSana, a multi-ingredient dietary supplement formulated with nutritional and botanical ingredients to complement your daily wellness routine.</p>
+                <a href="#" class="btn cta-link">Discover MetaboSana &rarr;</a>
+            </div>
+            <div class="hero-image-wrapper">
+                <!-- Fallback background if image is missing -->
+                <div class="image-placeholder" style="width:100%; height:100%;">
+                    <img src="hero.png" alt="Alpha-Lipoic Acid">
+                </div>
+                <!-- Actual Image -->
+                <img src="hero.png" alt="MetaboSana dietary supplement" onerror="this.style.display='none'">
+            </div>
+        </div>
+        <div class="container">
+             <p class="hero-disclaimer-small mt-2">Dietary supplement. Not a medicine.</p>
+        </div>
+    </section>
+
+    <!-- 3. Pain Point Section -->
+    <section class="section-neutral">
+        <div class="container">
+            <div class="text-center">
+                <h2>When Your Routine Isn’t Giving You the Support You Need</h2>
+                <p style="max-width: 750px; margin: 0 auto;">Your daily wellness routine may benefit from a more complete nutritional approach.</p>
+            </div>
+
+            <div class="grid-4">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Tired of Starting Over?</h3>
+                    <p>Strict plans and complicated routines can feel overwhelming and difficult to maintain.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/><path d="M12 7v5l3 3"/></svg>
+                    </div>
+                    <h3>Cravings Can Derail Your Routine</h3>
+                    <p>Unexpected cravings can make it harder to stick with the balanced choices you planned.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                    </div>
+                    <h3>Life Gets Busy</h3>
+                    <p>Work, family, travel, and unpredictable schedules can quickly push healthy habits aside.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
+                    <h3>Too Many Complicated Solutions</h3>
+                    <p>Strict plans and complicated routines can feel overwhelming and difficult to maintain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Transition Section -->
+    <section class="section-light text-center">
+        <div class="container">
+            <h2 style="max-width: 600px; margin: 0 auto 1.5rem;">Build Better Habits Without Turning Your Life Upside Down.</h2>
+            <p style="max-width: 700px; margin: 0 auto 3rem;">Building sustainable habits is often about consistency rather than extreme changes. MetaboSana is designed to fit alongside a balanced diet and healthy lifestyle, providing complementary botanical and nutritional support.</p>
+            <a href="#" class="btn btn-secondary cta-link">Discover the Formula &rarr;</a>
+        </div>
+    </section>
+
+    <!-- 5. Product Introduction -->
+    <section class="section-neutral">
+        <div class="container text-center">
+            <h2>Meet MetaboSana</h2>
+            <p style="max-width: 800px; margin: 0 auto;">MetaboSana combines carefully selected nutritional and botanical ingredients—including alpha-lipoic acid, green tea EGCG, berberine, chromium, banaba, zinc, milk thistle, resveratrol, Korean ginseng and cayenne—in one convenient daily formula.</p>
+            <p style="max-width: 800px; margin: 1.5rem auto 0; font-weight: 500;">Designed to complement a balanced diet and healthy lifestyle—not replace it.</p>
+        </div>
+    </section>
+
+    <!-- 6. Ingredient Section - Enhanced Grid -->
+    <section class="section-light">
+        <div class="container">
+            <h2 class="text-center">A Multi-Ingredient Formulation</h2>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto;">MetaboSana combines several well-known nutritional and botanical components in a single formula.</p>
+            
+            <div class="ingredient-grid">
+                <!-- 1 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"><img src="alpha.png" alt="Alpha-Lipoic Acid"></div>
+                    <h4>Alpha-Lipoic Acid</h4>
+                    <p>A compound found naturally in cells, often included in wellness formulas.</p>
+                </div>
+                <!-- 2 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"><img src="green.png" alt="Visual: Green Tea"></div>
+                    <h4>Green Tea EGCG</h4>
+                    <p>An active compound derived from green tea leaves, widely recognized in dietary supplements.</p>
+                </div>
+                <!-- 3 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"> <img src="berberine.png" alt="Berberine"></div>
+                    <h4>Berberine HCl</h4>
+                    <p>A botanical compound extracted from various plants, traditionally used for wellness.</p>
+                </div>
+                <!-- 4 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"><img src="chromium.png" alt="Chromium"></div>
+                    <h4>Chromium</h4>
+                    <p>An essential trace mineral often added to daily dietary supplement routines.</p>
+                </div>
+                <!-- 5 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"> <img src="banaba.png" alt="Alpha-Lipoic Acid"></div>
+                    <h4>Banaba Leaf</h4>
+                    <p>An extract sourced from the leaves of the Banaba tree, native to Southeast Asia.</p>
+                </div>
+                <!-- 6 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"><img src="zinc.png" alt="zinc"></div>
+                    <h4>Zinc</h4>
+                    <p>A vital mineral that plays a role in numerous cellular functions.</p>
+                </div>
+                <!-- 7 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"><img src="milk.png" alt="Milk Thistle"></div>
+                    <h4>Milk Thistle</h4>
+                    <p>A flowering herb related to the daisy family, frequently used in botanical blends.</p>
+                </div>
+                <!-- 8 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"> <img src="resveratrol.png" alt="Resveratrol"></div>
+                    <h4>Resveratrol</h4>
+                    <p>A plant compound commonly found in the skin of red grapes.</p>
+                </div>
+                <!-- 9 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"> <img src="korean.png" alt="Ginseng"></div>
+                    <h4>Korean Ginseng</h4>
+                    <p>A traditional root extract valued for centuries in various herbal wellness practices.</p>
+                </div>
+                <!-- 10 -->
+                <div class="ingredient-card">
+                    <div class="ingredient-visual image-placeholder"> <img src="capsaicin.png" alt="cayenne"></div>
+                    <h4>Cayenne</h4>
+                    <p>A type of chili pepper often included in formulations for its active capsaicin.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn cta-link">See What's Inside &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. "Why People Explore..." Section -->
+    <section class="section-accent">
+        <div class="container">
+            <h2 class="text-center mb-4">Support That Fits Into Your Existing Routine</h2>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">
+                         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3>Simple</h3>
+                    <p>A convenient dietary supplement format that can easily fit into an established morning or evening routine without complicated preparation.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <h3>Multi-Ingredient</h3>
+                    <p>A formulation purposefully combining multiple nutritional and botanical ingredients in one place.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3-4-3-5.5a3 3 0 0 1 3 3 1 1 0 0 0 2 0 5 5 0 0 0-5-5 3 3 0 0 0-3 3c0 2 1 3.9 3 5.5s3 4 3 5.5a3 3 0 0 1-3-3 1 1 0 0 0-2 0 5 5 0 0 0 5 5Z"/></svg>
+                    </div>
+                    <h3>Routine-Friendly</h3>
+                    <p>Designed to be taken alongside healthy eating, regular movement, and other positive lifestyle habits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. How it fits into a healthy lifestyle - Modern Steps -->
+    <section class="section-light">
+        <div class="container">
+            <h2 class="text-center mb-4">A Holistic Approach</h2>
+            <p class="text-center mb-4 mx-auto" style="max-width: 600px; margin-bottom: 4rem;">A supplement works best as part of an overall healthy lifestyle. Here is how it typically fits into a balanced routine:</p>
+            
+            <div class="grid-2 mt-4" style="margin-top: 0;">
+                <div>
+                    <div class="step-wrapper">
+                        <div class="step-graphic image-placeholder">
+                             <img src="nutrition.png" alt="Balanced Plate">
+                            <div class="step-number-overlay">01</div>
+                        </div>
+                        <div>
+                            <h4>Balanced Nutrition</h4>
+                            <p>Prioritizing whole foods and a balanced diet forms the foundation of everyday wellness.</p>
+                        </div>
+                    </div>
+                    <div class="step-wrapper">
+                        <div class="step-graphic image-placeholder">
+                            <img src="movement.png" alt="Exercise">
+                            <div class="step-number-overlay">02</div>
+                        </div>
+                        <div>
+                            <h4>Regular Movement</h4>
+                            <p>Engaging in consistent physical activity supports energy and overall health.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="step-wrapper">
+                        <div class="step-graphic image-placeholder">
+                         <img src="consistent.png" alt="Sleep/Hydration">
+                            <div class="step-number-overlay">03</div>
+                        </div>
+                        <div>
+                            <h4>Consistent Daily Habits</h4>
+                            <p>Maintaining a regular sleep schedule and hydration helps the body function optimally.</p>
+                        </div>
+                    </div>
+                    <div class="step-wrapper">
+                        <div class="step-graphic image-placeholder">
+                            <img src="support.png" alt="MetaboSana Bottle">
+                            <div class="step-number-overlay">04</div>
+                        </div>
+                        <div>
+                            <h4>Supplement Support</h4>
+                            <p>Adding a targeted dietary supplement to complement your established nutritional efforts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Who May Want to Learn More -->
+    <section class="section-neutral">
+        <div class="container">
+            <h2 class="text-center">Is This For You?</h2>
+            
+            <ul class="check-list">
+                <li>
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Tried different wellness routines but struggled to stay consistent?
+                </li>
+                <li>
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Feeling like your current routine isn't giving you the support you want?
+                </li>
+                <li>
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Finding it difficult to maintain healthy habits with a busy lifestyle?
+                </li>
+                <li>
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Looking for a simple daily addition instead of a complicated wellness routine?
+                </li>
+                <li>
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Frustrated by constantly changing diets and wellness plans?
+                </li>
+                <li>
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    Want nutritional support without adding another complicated step to your day?
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 10. Product Details & 11. Trust Section - Enhanced -->
+    <section class="section-light">
+        <div class="container">
+            <div class="product-card">
+                <div class="product-card-visual image-placeholder">
+                    <img src="metabosana.png" alt="MetaboSana">
+                </div>
+                <h3 style="font-size: 2rem; margin-bottom: 0.5rem;">MetaboSana</h3>
+                <p style="margin-bottom: 2rem;">Botanical & Nutritional Formula</p>
+                
+                <div class="product-info-line"><strong>Category:</strong> <span>Dietary Supplement</span></div>
+                <div class="product-info-line"><strong>Format:</strong> <span>Easy-to-take formula</span></div>
+                <div class="product-info-line"><strong>Key Type:</strong> <span>Multi-Ingredient</span></div>
+                
+                <hr>
+                
+                <h4 style="font-size: 1.25rem;">Before You Buy</h4>
+                <p style="font-size: 0.95rem; margin-bottom: 2rem;">MetaboSana is a dietary supplement, not a medicine. Product information, ingredients, pricing, availability and purchase terms should be checked on the official product page before purchasing. Always review the manufacturer's current product information.</p>
+                
+                <a href="#" class="btn cta-link">View Product Details &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. FAQ Section - Enhanced Style -->
+    <section class="section-neutral">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What is MetaboSana?</button>
+                    <div class="faq-answer">
+                        <p>MetaboSana is a multi-ingredient dietary supplement formulated with a combination of nutritional and botanical ingredients designed to complement a healthy lifestyle.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is MetaboSana a medicine?</button>
+                    <div class="faq-answer">
+                        <p>No, MetaboSana is a dietary supplement. It is not intended to diagnose, treat, cure, or prevent any disease.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What ingredients does MetaboSana contain?</button>
+                    <div class="faq-answer">
+                        <p>The formulation includes alpha-lipoic acid, green tea EGCG, berberine, chromium, banaba, zinc, milk thistle, resveratrol, Korean ginseng, and cayenne. Always check the official product label for the most current ingredient list.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How should I evaluate a dietary supplement?</button>
+                    <div class="faq-answer">
+                        <p>A supplement should be evaluated based on how it fits into your overall lifestyle. Read the ingredient profile and consult a qualified healthcare professional if you have questions about how a formulation might interact with your specific needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I take supplements with medication?</button>
+                    <div class="faq-answer">
+                        <p>Consult a qualified healthcare professional before using dietary supplements, especially if you have a health condition, take medication, or are pregnant or breastfeeding.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Where can I see the current product details?</button>
+                    <div class="faq-answer">
+                        <p>Use the button on this page to visit the product provider's current offer, where you can view up-to-date pricing, ingredient facts, and purchase terms.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Does this page sell the product directly?</button>
+                    <div class="faq-answer">
+                        <p>No, OfferZone is an informational and affiliate publisher. Clicking the links on this page will redirect you to the official provider's website to complete any potential purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. Final CTA Section - High Contrast Botanical -->
+    <section class="section-light final-cta">
+        <div class="container">
+            <h2 style="font-size: 2.5rem;">Curious About MetaboSana?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2.5rem; font-size: 1.15rem;">Take a closer look at the formulation, ingredients and current product information on the official website.</p>
+            <a href="#" class="btn cta-link" style="font-size: 1.25rem; padding: 1.25rem 3rem;">Explore MetaboSana &rarr;</a>
+            <p class="mt-4" style="font-size: 0.9rem; opacity: 0.7;">Review the official product information before purchasing.</p>
+        </div>
+    </section>
+
+    <!-- 14 & 15 & 16. Disclosures & Footer -->
+    <footer class="legal-section">
+        <div class="container">
+            <div class="grid-2" style="margin-top: 0; gap: 3rem;">
+                <div>
+                    <h4>Affiliate Disclosure</h4>
+                    <p>OfferZone may receive a commission if you purchase through links on this page. This does not change the price you pay. This allows us to continue providing informational content.</p>
+                </div>
+                <div>
+                    <h4>Disclaimer</h4>
+                    <p>This page is for informational purposes only and does not provide medical advice. MetaboSana is a dietary supplement and is not intended to diagnose, treat, cure or prevent any disease. Individual results may vary. If you have a health condition, take medication, are pregnant or breastfeeding, consult a qualified healthcare professional before using dietary supplements.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div>
+                    <span style="font-weight: 700; color: var(--white); font-size: 1.25rem;">OfferZone</span>
+                    <span style="margin-left: 1rem;">&copy; 2026 OfferZone. All rights reserved.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Disclaimer</a>
+                    <a href="#">Affiliate Disclosure</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta" id="stickyCta">
+        <a href="#" class="btn cta-link" style="width: 100%;">Explore MetaboSana &rarr;</a>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Populate Affiliate Links (Already set at top)
+            const ctaLinks = document.querySelectorAll('.cta-link');
+            ctaLinks.forEach(link => {
+                link.href = AFFILIATE_LINK;
+                link.setAttribute('rel', 'nofollow sponsored noopener');
+                link.setAttribute('target', '_blank'); // Opens in new tab
+            });
+
+            // 2. FAQ Accordion Logic (Smoother Animation)
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const activeQuestion = document.querySelector('.faq-question.active');
+                    if (activeQuestion && activeQuestion !== question) {
+                        activeQuestion.classList.remove('active');
+                        activeQuestion.nextElementSibling.style.maxHeight = null;
+                    }
+
+                    question.classList.toggle('active');
+                    const answer = question.nextElementSibling;
+                    if (question.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + "px";
+                    } else {
+                        answer.style.maxHeight = null;
+                    }
+                });
+            });
+
+            // 3. Sticky Mobile CTA Visibility
+            const stickyCta = document.getElementById('stickyCta');
+            const heroButton = document.querySelector('.hero .btn');
+
+            window.addEventListener('scroll', () => {
+                if (window.innerWidth < 768) { // Only on mobile
+                    const heroBtnPosition = heroButton.getBoundingClientRect().bottom + window.scrollY;
+                    if (window.scrollY > heroBtnPosition) {
+                        stickyCta.classList.add('visible');
+                    } else {
+                        stickyCta.classList.remove('visible');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
